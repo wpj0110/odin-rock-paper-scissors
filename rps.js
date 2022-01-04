@@ -6,7 +6,7 @@ function hello(){
         alert("No input!");
         inputText = "No Input";
     }
-    document.getElementById("text1").innerHTML = inputText;
+    document.getElementById("text1").innerText = inputText;
 }
 
 function game(){
@@ -61,9 +61,9 @@ function game(){
     }
     let result = referee(playerChoice, computerChoice);
     console.log("Result is "+result);
-    document.getElementById("playerChoice").innerHTML = playerChoice;
-    document.getElementById("computerChoice").innerHTML = computerChoice;
-    document.getElementById("gameResult").innerHTML = result;
+    document.getElementById("playerChoice").innerText = playerChoice;
+    document.getElementById("computerChoice").innerText = computerChoice;
+    document.getElementById("gameResult").innerText = result;
 }
 
 function referee(pChoice, cChoice){ //Decides if it's a win, tie, or loss
