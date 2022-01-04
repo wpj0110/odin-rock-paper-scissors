@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="rps.js"> </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text1">Change the value of this text</p>
+    <form> Change it here: <input id="input1" type="text"> </form>
+    <button onclick="hello()">Click this button</button>
+    <br>
+    <p style="font-weight: bold; font-size: x-large;">Rock Paper Scissors Game</p>
+    <p>Case Sensitive Or Not?</p>
+    <form id="radioForm">
+        <input type="radio" id="yes" name="caseYesNo" value="RadioYes" checked>Yes
+        <input type="radio" id="no" name="caseYesNo" value="RadioNo">No
+    </form>
+    <button type="submit" onclick="game()">Rock Paper Scissors Game</button>
+    <div style="display: flex; gap: 15px;">
+        <div>
+            <p>Player's Choice: </p>
+            <p id="playerChoice">blah</p>
+        </div>
+        <div>
+            <p>Computer's Choice: </p>
+            <p id="computerChoice">blah</p>
+        </div>
+        <div>
+            <p>Result:</p>
+            <p id="gameResult">blah</p>
+        </div>
+    </div>
+</body>
+</html>
