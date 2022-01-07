@@ -115,3 +115,25 @@ function referee(pChoice, cChoice){ //Decides if it's a win, tie, or loss
         }
     }
 }
+
+function fib(num) {
+    let arr = [1,1,2];
+    if (num === 0 || num === 1){
+        console.log("Here "+arr[0]);
+        return arr[0];
+    } else if (num === 2){
+        console.log("There "+arr[2]);
+        return arr[2];
+    } else{
+        while (num !== 3){
+            arr.push(arr[arr.length - 1] + arr[arr.length - 2]);
+            num--;
+        }
+        console.log("Rest "+arr)
+        console.log("Rest "+arr[arr.length - 1]);
+        return arr[arr.length - 1];
+    }
+    console.log("This isn't suppose to happen");
+}
+
+console.log(fib(10));
